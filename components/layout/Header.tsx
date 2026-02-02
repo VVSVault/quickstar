@@ -62,7 +62,7 @@ export default function Header() {
         } ${
           isScrolled
             ? "bg-white shadow-lg h-[70px] md:h-[80px]"
-            : "bg-transparent py-4"
+            : "bg-transparent py-1 md:py-4"
         }`}
       >
         <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">

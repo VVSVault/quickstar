@@ -90,7 +90,7 @@ export default function Hero({
       </div>
 
       {/* Content */}
-      <div className={`relative z-10 container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl pt-32 md:pt-24 lg:pt-0 ${centered ? "text-center" : ""}`}>
+      <div className={`relative z-10 container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl pt-20 pb-16 md:pt-24 md:pb-8 lg:pt-0 lg:pb-0 ${centered ? "text-center" : ""}`}>
         <div className={`max-w-3xl ${centered ? "mx-auto" : ""}`}>
           {/* Badge */}
           <motion.div
