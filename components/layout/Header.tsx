@@ -174,7 +174,7 @@ export default function Header() {
               className={`lg:hidden p-2 rounded-lg transition-colors ${
                 isScrolled
                   ? "text-[var(--navy)] hover:bg-[var(--gray-light)]"
-                  : "text-white hover:bg-white/10"
+                  : "text-white hover:bg-white/10 -mt-6"
               }`}
               aria-label="Toggle menu"
             >
