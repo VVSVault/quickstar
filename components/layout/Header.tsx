@@ -73,7 +73,7 @@ export default function Header() {
                 src="/images/logo.png"
                 alt="Quickstar Transportation"
                 className={`transition-all duration-300 h-[150px] md:h-[180px] ${
-                  isScrolled ? "-my-10 md:-my-12" : ""
+                  isScrolled ? "-my-10 md:-my-12" : "-mt-6 md:mt-0"
                 } ${!isScrolled ? "brightness-0 invert" : ""}`}
               />
             </Link>
