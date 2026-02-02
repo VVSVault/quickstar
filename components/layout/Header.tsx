@@ -57,7 +57,9 @@ export default function Header() {
   return (
     <>
       <motion.header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 transition-all duration-300 ${
+          isMobileMenuOpen ? "z-[60]" : "z-50"
+        } ${
           isScrolled
             ? "bg-white shadow-lg h-[70px] md:h-[80px]"
             : "bg-transparent py-4"
@@ -69,7 +71,7 @@ export default function Header() {
         <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="z-10 flex-shrink-0">
+            <Link href="/" className={`flex-shrink-0 transition-opacity duration-300 ${isMobileMenuOpen ? "opacity-0 lg:opacity-100" : ""}`}>
               <img
                 src="/images/logo.png"
                 alt="Quickstar Transportation"
@@ -208,7 +210,7 @@ export default function Header() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 lg:hidden"
+            className="fixed inset-0 z-[55] lg:hidden"
           >
             {/* Backdrop */}
             <motion.div
