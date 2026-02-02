@@ -56,7 +56,7 @@ export default function Header() {
 
   return (
     <>
-      <motion.header
+      <header
         className={`fixed top-0 left-0 right-0 transition-all duration-300 ${
           isMobileMenuOpen ? "z-[60]" : "z-50"
         } ${
@@ -64,9 +64,6 @@ export default function Header() {
             ? "bg-white shadow-lg h-[70px] md:h-[80px]"
             : "bg-transparent py-4"
         }`}
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
       >
         <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-center justify-between">
@@ -201,7 +198,7 @@ export default function Header() {
             </button>
           </div>
         </div>
-      </motion.header>
+      </header>
 
       {/* Mobile Menu */}
       <AnimatePresence>
